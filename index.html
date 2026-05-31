@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sudoku Solver</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🧩 Sudoku Solver</h1>
+        <p>Built using Backtracking Algorithm</p>
+    </div>
+
+    <div class="main">
+
+        <div id="sudoku-board"></div>
+
+        <div class="stats">
+            <h2>Project Info</h2>
+
+            <div class="stat">
+                <strong>Algorithm</strong><br>
+                Backtracking
+            </div>
+
+            <div class="stat">
+                <strong>Grid Size</strong><br>
+                9 × 9
+            </div>
+
+            <div class="stat">
+                <strong>Status</strong><br>
+                Ready
+            </div>
+
+            <div class="stat">
+                <strong>Tech Stack</strong><br>
+                HTML, CSS, JavaScript
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button class="solve" onclick="solveSudoku()">⚡ Solve</button>
+
+        <button class="sample" onclick="loadSample()">🧩 Sample</button>
+
+        <button class="clear" onclick="clearBoard()">🗑️ Clear</button>
+    </div>
+
+    <div id="status"></div>
+    <footer>
+    © 2026 Shivangi Kakkar • B.Tech CSE
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

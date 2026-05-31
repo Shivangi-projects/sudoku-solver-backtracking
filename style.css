@@ -1,0 +1,155 @@
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(circle at top left,#2563eb,#0f172a),
+    radial-gradient(circle at bottom right,#7c3aed,#020617);
+
+    font-family:'Segoe UI',sans-serif;
+    color:white;
+}
+
+.container{
+    width:95%;
+    max-width:1200px;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,0.08);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.4);
+}
+
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:3.5rem;
+    margin:0;
+}
+
+.header p{
+    color:#cbd5e1;
+}
+
+.main{
+    display:flex;
+    gap:40px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+#sudoku-board{
+    display:grid;
+    grid-template-columns:repeat(9,60px);
+    gap:2px;
+}
+
+#sudoku-board input{
+    width:60px;
+    height:60px;
+
+    text-align:center;
+
+    font-size:1.4rem;
+
+    background:#0f172a;
+
+    border:1px solid #334155;
+
+    color:white;
+
+    transition:.3s;
+}
+
+#sudoku-board input:focus{
+    outline:none;
+
+    border:2px solid #38bdf8;
+
+    box-shadow:
+    0 0 15px #38bdf8;
+}
+
+.stats{
+    min-width:280px;
+
+    background:rgba(255,255,255,0.05);
+
+    padding:25px;
+
+    border-radius:20px;
+}
+
+.stats h2{
+    margin-top:0;
+}
+
+.stat{
+    margin:15px 0;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:30px;
+}
+
+button{
+    border:none;
+
+    padding:14px 28px;
+
+    margin:10px;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.solve{
+    background:#22c55e;
+}
+
+.sample{
+    background:#3b82f6;
+}
+
+.clear{
+    background:#ef4444;
+}
+
+button:hover{
+    transform:translateY(-4px) scale(1.05);
+}
+
+#status{
+    text-align:center;
+    margin-top:20px;
+    font-size:1.1rem;
+}
+footer{
+    margin-top:30px;
+    text-align:center;
+    color:#cbd5e1;
+    font-size:0.95rem;
+    line-height:1.6;
+}
